@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 
 function App() {
   return (
@@ -113,7 +115,7 @@ function App() {
             <div
               className="insights"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
                 flexDirection: "column",
@@ -122,24 +124,35 @@ function App() {
                 borderRadius: "50px",
                 gridColumn: "3/5",
                 gridRow: "1/3",
-                padding: '25px 40px'
+                padding: "25px 40px",
               }}
             >
               <img
                 src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/charts.png?raw=true"
                 alt="charts"
-                style={{ width: "280px", paddingBottom: "20px"}}
+                style={{ width: "280px", paddingBottom: "20px" }}
               />
-              <div style={{display: 'flex', flexDirection: 'column', padding: '0 30px'}}>
-              <h3 style={{fontSize: "16px",}}>powerful <span style={{color: '#EDB137' }}>insights</span></h3>
-              <p style={{fontSize: "13px",}}>A suite of features to help you thrive. <br/>CRM data at your fingertips</p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "0 30px",
+                }}
+              >
+                <h3 style={{ fontSize: "16px" }}>
+                  powerful <span style={{ color: "#EDB137" }}>insights</span>
+                </h3>
+                <p style={{ fontSize: "13px" }}>
+                  A suite of features to help you thrive. <br />
+                  CRM data at your fingertips
+                </p>
               </div>
             </div>
 
             <div
               className="payments"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
                 flexDirection: "column",
@@ -190,7 +203,7 @@ function App() {
             <div
               className="qr"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
                 flexDirection: "column",
@@ -201,13 +214,40 @@ function App() {
                 gridRow: "2",
               }}
             >
-              <p>qr</p>
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/scanme.png?raw=true"
+                alt="scan me"
+                style={{
+                  width: "80px",
+                  alignSelf: "flex-end",
+                  position: "relative",
+                  top: "-10px",
+                  right: "10px",
+                }}
+              />
+              <div>
+                <img
+                  src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/qrcode.png?raw=true"
+                  alt="qrcode"
+                  style={{ width: "120px", alignSelf: "flex-start" }}
+                />
+                <img
+                  src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/arrow.png?raw=true"
+                  alt="arrow"
+                  style={{
+                    width: "50px",
+                    alignSelf: "flex-start",
+                    position: "relative",
+                    top: "-70px",
+                  }}
+                />
+              </div>
             </div>
 
             <div
               className="loyalty"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
                 flexDirection: "row",
@@ -216,25 +256,28 @@ function App() {
                 borderRadius: "50px",
                 gridColumn: "2/4",
                 gridRow: "3",
-                padding: "18px 40px"
+                padding: "18px 40px",
               }}
             >
-              <div style={{display: 'flex', flexDirection: 'column'}}>
-              <h3 style={{fontSize: "16px",}}><span style={{color: '#EDB137' }}>loyalty</span> program</h3>
-              <p style={{fontSize: "13px",}}>tailored programs for lasting happiness.</p>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "16px" }}>
+                  <span style={{ color: "#EDB137" }}>loyalty</span> program
+                </h3>
+                <p style={{ fontSize: "13px" }}>
+                  tailored programs for lasting happiness.
+                </p>
               </div>
               <img
                 src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/loyalty.png?raw=true"
                 alt="loyalty"
-                style={{ width: "130px"}}
+                style={{ width: "130px" }}
               />
-              
             </div>
 
             <div
               className="members"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
                 flexDirection: "column",
@@ -243,35 +286,82 @@ function App() {
                 borderRadius: "50px",
                 gridColumn: "4",
                 gridRow: "3",
-                padding: '0 40px'
+                padding: "0 40px",
               }}
             >
-              <div style={{display: 'flex', flexDirection: 'column', }}>
-              <h3 style={{fontSize: "40px", color: '#EDB137'}}>300K</h3>
-              <p style={{fontSize: "13px",}}>members within our ecosystem</p>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "40px", color: "#EDB137" }}>300K</h3>
+                <p style={{ fontSize: "13px" }}>members within our ecosystem</p>
               </div>
             </div>
 
             <div
               className="grow"
               style={{
-                backgroundColor: "#E7E9EF",
+                // backgroundColor: "#E7E9EF",
                 color: "#414141",
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "row",
                 justifyContent: "center",
                 alignItems: "center",
                 borderRadius: "50px",
                 gridColumn: "1/5",
                 gridRow: "4",
-                padding: '15px 30px'
+                padding: "15px 30px",
               }}
             >
-              <div style={{display: 'flex', flexDirection: 'column', padding: '0 30px'}}>
-              <h3 style={{fontSize: "16px", paddingBottom: '5px'}}>Grow with <span style={{color: '#EDB137' }}>Waffle</span></h3>
-              <p style={{fontSize: "12px",}}>“In the F&B industry, speed is key, and having a reliable POS system even when the wi-fi is down is a must! Waffle provides this and is also customizable for my drinks and noodle stalls, and more! Thanks to them, we are able to manage all of these concepts easily.”</p>
-              <p style={{fontSize: "11px", alignSelf: 'flex-end'}}>Terry Neo <br/> Founder & CEO</p>
+              <Button
+                variant="contained"
+                sx={{
+                  padding: "0px",
+                  minWidth: "20px",
+                  height: "20px",
+                  borderRadius: "50px",
+                  backgroundColor: "rgba(65, 65, 65, 0.5)",
+                  boxShadow: "none",
+                  "&:hover": {
+                    backgroundColor: "#F9C044",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                  },
+                }}
+              >
+                <KeyboardArrowLeftIcon sx={{ fontSize: "15px" }} />
+              </Button>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "0 30px",
+                }}
+              >
+                <h3 style={{ fontSize: "16px", paddingBottom: "5px" }}>
+                  Grow with <span style={{ color: "#EDB137" }}>Waffle</span>
+                </h3>
+                <p style={{ fontSize: "12px" }}>
+                  “In the F&B industry, speed is key, and having a reliable POS
+                  system even when the wi-fi is down is a must! Waffle provides
+                  this and is also customizable for my drinks and noodle stalls,
+                  and more! Thanks to them, we are able to manage all of these
+                  concepts easily.”
+                </p>
+                <p style={{ fontSize: "11px", alignSelf: "flex-end" }}>
+                  Terry Neo <br /> Founder & CEO
+                </p>
               </div>
+              <Button variant="contained" sx={{
+                  padding: "0px",
+                  minWidth: "20px",
+                  height: "20px",
+                  borderRadius: "50px",
+                  backgroundColor: "rgba(65, 65, 65, 0.5)",
+                  boxShadow: "none",
+                  "&:hover": {
+                    backgroundColor: "#F9C044",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                  },
+                }}>
+                <KeyboardArrowRightIcon sx={{ fontSize: "15px" }} />
+              </Button>
             </div>
           </div>
         </Grid>

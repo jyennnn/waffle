@@ -11,9 +11,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 code {
   font-family: 'Poppins', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.insights{
+  background-color: #e7e9ef;
+  transition: background-color 0.3s ease;
+}
+
+.payments{
+  background-color: #e7e9ef;
+  transition: background-color 0.3s ease;
+}
+
+.loyalty{
+  background-color: #e7e9ef;
+  transition: background-color 0.3s ease;
+}
+
+.grow{
+  background-color: #e7e9ef;
+  transition: background-color 0.3s ease;
+}
+
+.members{
+  background-color: #e7e9ef;
+  transition: background-color 0.3s ease;
+}
+
+.insights:hover {
+  background-color: rgba(237, 177, 55, 0.25);
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payments:hover {
+  background-color: rgba(237, 177, 55, 0.25);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loyalty:hover {
+  background-color: rgba(237, 177, 55, 0.25);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grow:hover {
+  background-color: rgba(237, 177, 55, 0.25);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.members:hover {
+  background-color: rgba(237, 177, 55, 0.25);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
