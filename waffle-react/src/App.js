@@ -80,12 +80,7 @@ function App() {
             </Button>
           </Container>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={7}
-        >
+        <Grid item xs={12} sm={12} md={7}>
           <div
             className="bento-layout"
             style={{
@@ -94,7 +89,7 @@ function App() {
               gridTemplateRows: "repeat(4, 1fr)",
               height: "90vh",
               gridGap: "10px",
-              width: '57vw'
+              width: "55vw",
             }}
           >
             <div
@@ -102,34 +97,43 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "1/3",
                 gridRow: "1",
-                padding: '30px 50px'
+                padding: "30px 50px",
               }}
             >
-              <p style={{alignSelf: 'flex-start'}}>welcome,</p>
-              <h2 style ={{fontSize: '35px'}}>Samantha_</h2>
+              <p style={{ alignSelf: "flex-start" }}>welcome,</p>
+              <h2 style={{ fontSize: "35px" }}>Samantha_</h2>
             </div>
             <div
               className="insights"
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "3/5",
                 gridRow: "1/3",
+                padding: '25px 40px'
               }}
             >
-              <p>insights</p>
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/charts.png?raw=true"
+                alt="charts"
+                style={{ width: "280px", paddingBottom: "20px"}}
+              />
+              <div style={{display: 'flex', flexDirection: 'column', padding: '0 30px'}}>
+              <h3 style={{fontSize: "16px",}}>powerful <span style={{color: '#EDB137' }}>insights</span></h3>
+              <p style={{fontSize: "13px",}}>A suite of features to help you thrive. <br/>CRM data at your fingertips</p>
+              </div>
             </div>
 
             <div
@@ -137,19 +141,26 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-start',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "flex-start",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "1",
                 gridRow: "2/4",
-                padding: '30px 25px'
-
+                padding: "30px 25px",
               }}
             >
-              <h3 style={{textAlign: 'center', fontSize: '16px', paddingBottom: '3px'}}>payment methods</h3>
-                <img
+              <h3
+                style={{
+                  textAlign: "center",
+                  fontSize: "16px",
+                  paddingBottom: "3px",
+                }}
+              >
+                payment methods
+              </h3>
+              <img
                 src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/mastercard.png?raw=true"
                 alt="master card"
                 style={{ width: "80px", padding: "3px 0 " }}
@@ -181,11 +192,11 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "2",
                 gridRow: "2",
               }}
@@ -198,16 +209,26 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "2/4",
                 gridRow: "3",
+                padding: "18px 40px"
               }}
             >
-              <p>loyalty</p>
+              <div style={{display: 'flex', flexDirection: 'column'}}>
+              <h3 style={{fontSize: "16px",}}><span style={{color: '#EDB137' }}>loyalty</span> program</h3>
+              <p style={{fontSize: "13px",}}>tailored programs for lasting happiness.</p>
+              </div>
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/loyalty.png?raw=true"
+                alt="loyalty"
+                style={{ width: "130px"}}
+              />
+              
             </div>
 
             <div
@@ -215,16 +236,20 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "4",
                 gridRow: "3",
+                padding: '0 40px'
               }}
             >
-              <p>members</p>
+              <div style={{display: 'flex', flexDirection: 'column', }}>
+              <h3 style={{fontSize: "40px", color: '#EDB137'}}>300K</h3>
+              <p style={{fontSize: "13px",}}>members within our ecosystem</p>
+              </div>
             </div>
 
             <div
@@ -232,18 +257,22 @@ function App() {
               style={{
                 backgroundColor: "#E7E9EF",
                 color: "#414141",
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '50px',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50px",
                 gridColumn: "1/5",
                 gridRow: "4",
+                padding: '15px 30px'
               }}
             >
-              <p>grow</p>
+              <div style={{display: 'flex', flexDirection: 'column', padding: '0 30px'}}>
+              <h3 style={{fontSize: "16px", paddingBottom: '5px'}}>Grow with <span style={{color: '#EDB137' }}>Waffle</span></h3>
+              <p style={{fontSize: "12px",}}>“In the F&B industry, speed is key, and having a reliable POS system even when the wi-fi is down is a must! Waffle provides this and is also customizable for my drinks and noodle stalls, and more! Thanks to them, we are able to manage all of these concepts easily.”</p>
+              <p style={{fontSize: "11px", alignSelf: 'flex-end'}}>Terry Neo <br/> Founder & CEO</p>
+              </div>
             </div>
-
           </div>
         </Grid>
       </Grid>
