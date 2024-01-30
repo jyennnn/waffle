@@ -139,14 +139,41 @@ function App() {
                 color: "#414141",
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'flex-start',
                 alignItems: 'center',
                 borderRadius: '50px',
                 gridColumn: "1",
                 gridRow: "2/4",
+                padding: '30px 25px'
+
               }}
             >
-              <p>payments</p>
+              <h3 style={{textAlign: 'center', fontSize: '16px', paddingBottom: '3px'}}>payment methods</h3>
+                <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/mastercard.png?raw=true"
+                alt="master card"
+                style={{ width: "80px", padding: "3px 0 " }}
+              />
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/visa.png?raw=true"
+                alt="visa"
+                style={{ width: "80px", padding: "3px 0 " }}
+              />
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/googlepay.png?raw=true"
+                alt="google pay"
+                style={{ width: "80px", padding: "3px 0 " }}
+              />
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/applepay.png?raw=true"
+                alt="apple pay"
+                style={{ width: "80px", padding: "3px 0 " }}
+              />
+              <img
+                src="https://github.com/jyennnn/waffle/blob/main/waffle-react/src/assets/images/paynow.png?raw=true"
+                alt="paynow"
+                style={{ width: "80px", padding: "3px 0 " }}
+              />
             </div>
 
             <div
